@@ -29,7 +29,7 @@ const validarCampos = ()=>{
             error[1] = "El correo es invalido"
             return error
         
-    } else if (carrera.value < 4 || carrera.value > 40){
+    } else if (carrera.value.length < 4 || carrera.value.length > 40){
         error[0] = true;
         error[1] = "La carrera no existe"
         return error
